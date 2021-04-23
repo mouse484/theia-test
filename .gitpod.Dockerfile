@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full
 
-RUN sudo apt-get update &&
-  sudo apt-get install libx11-dev libxkbfile-dev
+RUN sudo apt-get update \
+    && sudo apt-get install -y libx11-dev libxkbfile-dev
 
 ENV SHELL=/bin/bash
 
